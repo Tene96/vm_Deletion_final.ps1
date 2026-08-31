@@ -1,0 +1,51 @@
+﻿{
+  "vCenterServers": [
+    {
+      "Name": "PROD",
+      "Server": "VC1"
+    },
+    {
+      "Name": "MGMTVC",
+      "Server": "VC2"
+    },
+    {
+      "Name": "VDI",
+      "Server": "VC3"
+    }
+  ],
+  "DefaultSettings": {
+    "vCenterServer": "vcenter01.domain.local",
+    "SCCMServer": "sccmsrv.system.co.il",
+    "SCCMSiteCode": "XYZ",
+    "DNSServer": "DNS1",
+    "DNSZone": "system.co.il",
+    "DomainController": "DC1",
+    "EmailNotification": "Windows@system.co.il",
+    "EnableLogging": true,
+    "ConfirmDeletion": true,
+    "PowerOffTimeout": 30,
+    "DeleteFromDisk": true,
+    "SQLServer": "sql4",
+    "SQLDatabase": "System",
+    "SQLTable": "TBL_SERVERS_ACTIVITIES",
+    "SQLIntegratedAuth": false,
+    "SQLUsername": "system",
+    "SQLPassword": "system",
+    "SMTPServer": "mail.co.il",
+    "SMTPPort": 25,
+    "SMTPUseSSL": false,
+    "SMTPFrom": "windows@System.co.il",
+    "EmailSubjectPrefix": "[VM Deletion]",
+    "EnableEmailNotification": true,
+    "ADSearchBase": "OU=Servers,DC=System,DC=co,DC=il",
+    "ADSearchBaseByEnvironment": {
+      "PROD": "OU=Servers,DC=System,DC=co,DC=il",
+      "MGMTVC": "OU=ServersDC=System,DC=co,DC=il",
+      "VDI": "DC=System,OU=VDI,DC=iai,DC=co,DC=il"
+    },
+    "GroupsCommon": "test@system.co.il",
+    "GroupsWindows": "windows@System.co.il",
+    "GroupsLinux": "linux@System.co.il",
+    "AdminAlertEmail": "windows@System.co.il"
+  }
+}
