@@ -402,18 +402,18 @@ function Set-DefaultConfiguration {
     
 
     # SQL Settings
-    SQLServer               = "sql4"
-    SQLDatabase             = "System"
-    SQLTable                = "TBL_SERVERS_ACTIVITIES"
+    SQLServer               = "YOUR_SQL_SERVER"
+    SQLDatabase             = "YOUR_SQL_DATABASE"
+    SQLTable                = "YOUR_SQL_TABLE"
     SQLIntegratedAuth       = $false
-    SQLUsername             = "system"
-    SQLPassword             = "system"
+    SQLUsername             = ""YOUR_SQL_USERNAME""
+    SQLPassword             = ""YOUR_SQL_PASSWORD""
 
     # Email Settings
-    SMTPServer              = "mail.co.il"
+    SMTPServer              = "YOUR_SMTP"
     SMTPPort                = 25
     SMTPUseSSL              = $false
-    SMTPFrom                = "windows.co.il"
+    SMTPFrom                = "Sender"
     EmailSubjectPrefix      = "[VM Deletion]"
     EnableEmailNotification = $true
     
